@@ -1,5 +1,6 @@
 {
   "name": "opentype.js",
+  "version": "2.0.0-gsub.1",
   "description": "OpenType font parser",
   "author": {
     "name": "Frederik De Bleser",
@@ -25,6 +26,7 @@
   "module": "./dist/opentype.mjs",
   "scripts": {
     "build": "npm run b:umd && npm run b:esm",
+    "prepare": "npm run build",
     "dist": " npm run d:umd && npm run d:esm",
     "test": "npm run build && npm run dist && mocha --recursive && npm run lint",
     "lint": "eslint src",
